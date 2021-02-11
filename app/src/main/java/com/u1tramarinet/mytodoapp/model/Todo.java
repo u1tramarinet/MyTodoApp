@@ -7,6 +7,7 @@ public class Todo {
     private String content;
     private String createdDate;
     private String dueDate;
+    private boolean completed;
 
     public long getId() {
         return id;
@@ -46,5 +47,13 @@ public class Todo {
 
     public void setDueDate(String dueDate) {
         this.dueDate = dueDate;
+    }
+
+    public boolean isCompleted() {
+        return this.completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }
